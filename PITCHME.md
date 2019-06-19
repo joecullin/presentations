@@ -88,7 +88,7 @@ getInput().then(paths => {
 #### Slide three!
 @snapend
 
-@snap[west span-55]
+@snap[west span-100]
 @ul[spaced text-white]
 - Essential grammar is small: stdin, stdout, stderr. Files & lines.
 - Will initially feel clunky and rough. As your vocabulary grows, you'll get more concise and efficient.
@@ -97,8 +97,17 @@ getInput().then(paths => {
 - For when you don't have permissions (or time) to set up your usual commands.
 - So you can re-use others' work. The more commands you understand, the more you'll be able to confidently parse and adapt suggestions from stack overflow and the internet.
 - Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
+@ulend
+@snapend
 
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
+@snap[north-west h4-white]
+#### Slide three!
+@snapend
+
+@snap[west span-55]
+@ul[spaced text-white]
 - You will be amazed
 - What you can achieve
 - *With a little imagination...*
@@ -109,6 +118,8 @@ getInput().then(paths => {
 @snap[east span-45]
 @img[shadow](assets/img/find_cat.jpg)
 @snapend
+
+
 
 ---?image=assets/img/slide_background.jpg
 @title[Conclusion]
