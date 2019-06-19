@@ -98,7 +98,7 @@ getInput().then(paths => {
 @snapend
 
 @snap[east span-45]
-@img[shadow](assets/img/find_cat.png)
+@img[shadow](assets/img/find_cat.jpg)
 @snapend
 
 ---?image=assets/img/slide_background.jpg
