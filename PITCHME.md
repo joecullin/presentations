@@ -87,9 +87,9 @@ getInput().then(paths => {
 
 @snap[west span-100]
 @ul[text-white]
-- Essential grammar is small: stdin, stdout, stderr. Files & lines.
-- Clunky and rough at first. As your vocabulary grows, you'll get more concise and efficient.
-- On your "main" systems e.g. your mac, fall back on custom utility scripts.
+- Essential grammar is small: stdin, stdout, files, lines.
+- As your vocabulary grows, you'll get more concise and efficient.
+- On your main systems e.g. your mac, start with custom utility scripts.
 - **Why build your vocabulary** of standard commands?
 - For when you don't have permissions (or time) to set up your usual commands.
 - To re-use others' work: confidently parse and adapt suggestions from stack overflow and the internet. Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
