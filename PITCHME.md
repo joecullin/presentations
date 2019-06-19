@@ -28,22 +28,35 @@
 @snapend
 
 ```bash
-mac dev DIRTY /code/linux-slides $ history | tail
- 1633  pwd
- 1634  sl about/
- 1635  sl about/service/
- 1636  jobs
- 1637  fg 1
- 1638  history
- 1639  history | head
- 1640  history | tail
- 1641  popd
- 1642  history | tail
-mac dev DIRTY /code/linux-slides $ 
+$ python -mjson.tool tiu_proof_20190619.json | fgrep '"url"' | fgrep '/featured/' | sort | uniq | cut '-d"' -f4 | perl -p -e 's{(.*)}{curl -uTester:tester -v "$1" > /dev/null}'
+curl -uTester:tester -v "https://news.thomasnet.com/featured/going-green-how-sustainable-manufacturing-practices-help-the-environment-and-increase-your-revenue/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/how-ab-inbev-global-breweries-incorporate-sustainable-brewing-methods/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/johns-manville-to-add-new-production-line/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/rpm-international-acquires-foam-tape-maker/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-lawnmower-could-rival-ferrari/" > /dev/null 
 ```
-@[1]review my history
-@[2-11]that's it
-@[12]what now?
+
+broken down into components:
+```bash
+$ python -mjson.tool tiu_proof_20190619.json \
+| fgrep '"url"' \
+| fgrep '/featured/' \
+| sort \
+| uniq \
+| cut '-d"' -f4 \
+| perl -p -e 's{(.*)}{curl -uTester:tester -v "$1" > /dev/null}'
+curl -uTester:tester -v "https://news.thomasnet.com/featured/going-green-how-sustainable-manufacturing-practices-help-the-environment-and-increase-your-revenue/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/how-ab-inbev-global-breweries-incorporate-sustainable-brewing-methods/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/johns-manville-to-add-new-production-line/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/rpm-international-acquires-foam-tape-maker/" > /dev/null
+curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-lawnmower-could-rival-ferrari/" > /dev/null 
+```
+@[1]use python to parse (pretty-print and validate) json
+@[2]filter to find all lines containing "url"
+@[3]filter to find all urls containing "/featured/"
+@[4-5]remove duplicates with sort+uniq
+@[6]from a line like `"url": "https://...",` extract just the url -- the 4th "-delimited field.
+@[7]insert that url into a template curl command
 
 
 ---?color=linear-gradient(90deg, #03405f 65%, white 35%)
