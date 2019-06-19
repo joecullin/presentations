@@ -49,7 +49,7 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-law
 @[2](filter to find all lines containing "url")
 @[3](filter to find all urls containing "/featured/")
 @[4-5](remove duplicates with sort+uniq)
-@[6](from a line like `"url": "https://...",` extract just the url -- the 4th "-delimited field.)
+@[6](split on " char, and take the 4th column)
 @[7](insert that url into a template curl command)
 
 
