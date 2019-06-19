@@ -96,6 +96,12 @@ getInput().then(paths => {
 @ulend
 @snapend
 
+Note:
+- Using standard building blocks also make it easier to get help.
+- There's a giant community that is eager to troubleshoot your commands.
+- Harder to get the same support for lengthy custom code.
+
+
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
@@ -129,11 +135,6 @@ getInput().then(paths => {
 - vi exercises: http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
 @ulend
 @snapend
-
-@snap[east span-45]
-@img[shadow](assets/img/find_cat.jpg)
-@snapend
-
 
 ---?image=assets/img/slide_background.jpg
 @title[Conclusion]
