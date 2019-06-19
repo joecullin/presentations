@@ -1,31 +1,50 @@
-# Let's Get Started
+# Working in Linux
 
----?image=assets/img/slide_background.jpg
+---?color=linear-gradient(90deg, #03405f 65%, white 35%)
+@title[Slide 1]
 
-## Add Some Slide Candy
-
-![](assets/img/presentation.png)
-
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
-
-@snap[west span-50]
-## Customize the Layout
+@snap[north-west h4-white]
+#### Slide One
 @snapend
 
-@snap[east span-50]
-![](assets/img/presentation.png)
+@snap[west span-55]
+@ul[spaced text-white]
+- You will be amazed
+- What you can achieve
+- *With a little imagination...*
+- And **GitPitch Markdown**
+@ulend
 @snapend
 
-@snap[south span-100 text-white]
-Snap Layouts let you create custom slide designs directly within your markdown.
+@snap[east span-45]
+@img[shadow](assets/img/conference.png)
 @snapend
 
 ---?color=linear-gradient(90deg, #03405f 65%, white 35%)
-@title[Add A Little Imagination]
+@title[Slide 2]
 
 @snap[north-west h4-white]
-#### And start presenting...
+#### Slide two...
+@snapend
+
+@snap[west span-55]
+@ul[spaced text-white]
+- You will be amazed
+- What you can achieve
+- *With a little imagination...*
+- And **GitPitch Markdown**
+@ulend
+@snapend
+
+@snap[east span-45]
+@img[shadow](assets/img/conference.png)
+@snapend
+
+---?color=linear-gradient(90deg, #03405f 65%, white 35%)
+@title[Slide 3]
+
+@snap[north-west h4-white]
+#### Slide three!
 @snapend
 
 @snap[west span-55]
