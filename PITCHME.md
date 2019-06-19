@@ -36,9 +36,17 @@ $ find . -type f -name \*.inc \
 | perl -p -e 's{^/(.*)}{news.thomasnet.com/$1 to www.thomasnet.com/insights/$1}' \
 | sort \
 | uniq
+news.thomasnet.com/machining/2013/02/20/techno-offers-educational-cnc-package to www.thomasnet.com/insights/machining/2013/02/20/techno-offers-educational-cnc-package
+news.thomasnet.com/machining/2013/02/22/bobcad-cam-unveils-grant-program-for-small-business-assistance to www.thomasnet.com/insights/machining/2013/02/22/bobcad-cam-unveils-grant-program-for-small-business-assistance
+news.thomasnet.com/machining/2013/02/22/how-does-3-d-printing-impact-conventional-manufacturing to www.thomasnet.com/insights/machining/2013/02/22/how-does-3-d-printing-impact-conventional-manufacturing
+news.thomasnet.com/procurement/2014/05/22/innovative-suppliers-accept-procurement-challenge to www.thomasnet.com/insights/procurement/2014/05/22/innovative-suppliers-accept-procurement-challenge
 ```
 @[1](find all files beneath "." matching *.inc)
-@[2](search each of those files for lines containing `$cachevalidurl`)
+@[2](search each of those files for lines containing $cachevalidurl)
+@[3](split on single quote, and take the 2nd column)
+@[4](insert the resulting value into a template twice)
+@[5-6](remove duplicates with sort+uniq)
+@[7-19](result)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
