@@ -13,6 +13,10 @@ theme-code       : [ "Fira Code" ]
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 
+# Display line numbers for all code blocks
+# https://gitpitch.com/docs/settings/line-numbers
+code-line-numbers : true
+
 #
 # Theme-Override Setting
 # Doc: https://gitpitch.com/docs/settings/custom-theme
