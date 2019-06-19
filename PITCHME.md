@@ -55,7 +55,7 @@ Using fewer commands and a utility script.
 ```bash
 $ find . -type f -name \*.inc | xargs cat | ./util.js
 ```
-@[1](Find all files beneath "." matching *.inc.)
+@[1](Find all *.inc, files, and dump their lines.)
 ```javascript
 #!/usr/local/bin/node
 const getInput = () => {
@@ -77,10 +77,9 @@ getInput().then(paths => {
   console.log("paths", paths);
 });
 ```
-@[1](Find all files beneath "." matching *.inc.)
-@[2](Search each of those files for lines containing $cachevalidurl.)
-
-
+@[1-7](Read stdin, split into lines.)
+@[8-12](Filter just the lines we want.)
+@[17-19](Further processing ...)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
