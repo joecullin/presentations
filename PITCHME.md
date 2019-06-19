@@ -117,7 +117,7 @@ Note:
 @snapend
 
 @snap[east span-45]
-@img[shadow](assets/img/find_cat.jpg)
+@img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
 
