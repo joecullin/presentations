@@ -68,8 +68,10 @@
 @snapend
 
 @snap[west span-55]
+@ul[spaced text-white](false)
 - item 1
 - item 2
+@ulend
 @snapend
 
 @snap[south span-100 text-06]
