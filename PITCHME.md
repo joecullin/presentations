@@ -28,12 +28,24 @@
 @snapend
 
 @snap[west span-55]
-@ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
-@ulend
+```bash
+mac dev DIRTY /code/linux-slides $ history | tail
+ 1633  pwd
+ 1634  sl about/
+ 1635  sl about/service/
+ 1636  jobs
+ 1637  fg 1
+ 1638  history
+ 1639  history | head
+ 1640  history | tail
+ 1641  popd
+ 1642  history | tail
+mac dev DIRTY /code/linux-slides $ 
+```
+@[1]review my history
+@[2-11]that's it
+@[12]what now?
+
 @snapend
 
 @snap[east span-45]
