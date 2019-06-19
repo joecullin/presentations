@@ -51,6 +51,7 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-law
 @[4-5](remove duplicates with sort+uniq)
 @[6](split on " char, and take the 4th column)
 @[7](insert that url into a template curl command)
+@[8-12](result)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 65%, #03405f 35%)
