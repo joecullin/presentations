@@ -89,7 +89,7 @@ getInput().then(paths => {
 @ul[text-white]
 - Essential grammar is small: stdin, stdout, files, lines.
 - Start with custom scripts on your most-used systems.
-- As you grow your vocabulary, you'll get more concise and efficient.
+- As you grow your vocabulary, you'll become more concise and efficient.
 - **Benefits of a large vocabulary**
 - For when you don't have permissions (or time) to set up your usual commands.
 - To re-use others' work: confidently parse and adapt suggestions from stack overflow and the internet. Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
@@ -115,6 +115,24 @@ getInput().then(paths => {
 @img[shadow](assets/img/find_cat.jpg)
 @snapend
 
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Resources
+@snapend
+
+@snap[west span-55]
+@ul[spaced text-white](false)
+- Join *#learning-linux*
+- My utility scripts: https://github.com/joecullin/joecullin-toolbox
+- vi exercises: http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
+@ulend
+@snapend
+
+@snap[east span-45]
+@img[shadow](assets/img/find_cat.jpg)
+@snapend
 
 
 ---?image=assets/img/slide_background.jpg
