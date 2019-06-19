@@ -27,14 +27,9 @@
 #### Slide two...
 @snapend
 
-```bash
-$ python -mjson.tool tiu_proof_20190619.json | fgrep '"url"' | fgrep '/featured/' | sort | uniq | cut '-d"' -f4 | perl -p -e 's{(.*)}{curl -uTester:tester -v "$1" > /dev/null}'
-curl -uTester:tester -v "https://news.thomasnet.com/featured/going-green-how-sustainable-manufacturing-practices-help-the-environment-and-increase-your-revenue/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/how-ab-inbev-global-breweries-incorporate-sustainable-brewing-methods/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/johns-manville-to-add-new-production-line/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/rpm-international-acquires-foam-tape-maker/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-lawnmower-could-rival-ferrari/" > /dev/null 
-```
+@snap[east span-100]
+@img[shadow](assets/img/big_command.jpg)
+@snapend
 
 broken down into components:
 ```bash
