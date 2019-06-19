@@ -21,24 +21,13 @@
 @snapend
 
 ---?color=linear-gradient(90deg, #03405f 65%, white 35%)
-@title[Slide 2 image]
-
-@snap[north-west h4-white]
-#### Slide two image
-@snapend
-
-@snap[east span-100]
-@img[shadow](assets/img/big_command.jpg)
-@snapend
-
----?color=linear-gradient(90deg, #03405f 65%, white 35%)
 @title[Slide 2]
 
 @snap[north-west h4-white]
 #### Slide two...
 @snapend
 
-@snap[east span-100]
+@snap[north-east span-100]
 @img[shadow](assets/img/big_command.jpg)
 @snapend
 
