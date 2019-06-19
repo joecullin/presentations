@@ -61,11 +61,19 @@
 @snapend
 
 ---?image=assets/img/slide_background.jpg
+@transition[none]
 
 @snap[north span-100 h2-white]
-## Now It's Your Turn
+## Required Factory Picture
+@snapend
+
+@snap[west span-55]
+@ul[spaced text-white]
+- item 1
+- item 2
+@ulend
 @snapend
 
 @snap[south span-100 text-06]
-[Click here to jump straight into the interactive feature guides in the GitPitch Docs @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
+[Fork this presentation at https://github.com/joecullin/linux-slides @fa[external-link]](https://github.com/joecullin/linux-slides)
 @snapend
