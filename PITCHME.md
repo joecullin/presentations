@@ -51,11 +51,7 @@ news.thomasnet.com/procurement/2014/05/22/innovative-suppliers-accept-procuremen
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 @title[Same thing, using utility script]
 
-@snap[north-west h4-white]
-### Same thing, done partly in code
-@snapend
-
-Same thing, using fewer commands and a utility script.
+Using fewer commands and a utility script.
 ```bash
 $ find journal_data -type f -name \*.inc | xargs fgrep '$cachevalidurl' | node .util.js
 ```
@@ -64,28 +60,25 @@ $ find journal_data -type f -name \*.inc | xargs fgrep '$cachevalidurl' | node .
 ```javascript
 #!/usr/local/bin/node
 const getInput = () => {
-    return new Promise( (resolve, reject) => {
-        let steps = {};
-        const getStdin = require('get-stdin');
-        getStdin().then(input => {
-            let lines = input.split("\n");
-            let lineRE = /^Step ([A-Z]) must be finished before step ([A-Z]) can begin./;
-            lines.forEach( (line) => {
-                let lineMatch = line.match(lineRE);
-                let step1 = lineMatch[1], step2 = lineMatch[2];
-                if (steps[step1] === undefined){
-                    steps[step1] = [];
-                }
-                steps[step1].push(step2);
-            });
-            resolve(steps);
-        });
-    });
+  return new Promise((resolve, reject) => {
+    let paths = []; 
+    const getStdin = require("get-stdin");
+    getStdin().then(input => {
+      let lines = input.split("\n");
+      let lineRE = /\$cachevalidurl='(.*?)'/;
+      lines.forEach(line => {
+        const lineMatch = line.match(lineRE);
+        if (lineMatch) {
+          paths.push(lineMatch[1]);
+        }       
+      });   
+      resolve(paths);
+    }); 
+  });
 };
-
-getInput()
-.then( (steps) => {
-};
+getInput().then(paths => {
+  console.log("paths", paths);
+});
 ```
 
 
