@@ -20,17 +20,17 @@
 @img[shadow](assets/img/conference.png)
 @snapend
 
----?color=linear-gradient(90deg, #03405f 65%, white 35%)
+---?color=linear-gradient(90deg, #03405f 75%, white 25%)
 @title[Slide 2]
 
 @snap[north-west h4-white]
 #### Slide two...
 @snapend
 
-broken down into components:
+Big ugly command
 ![big command](assets/img/big_command.jpg)
 
-broken down into components:
+Steps:
 ```bash
 $ python -mjson.tool tiu_proof_20190619.json \
 | fgrep '"url"' \
