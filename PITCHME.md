@@ -49,22 +49,20 @@ news.thomasnet.com/procurement/2014/05/22/innovative-suppliers-accept-procuremen
 @[7-10](Result)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+@title[Same thing, using utility script]
 
 @snap[north-west h4-white]
 ### Same thing, done partly in code
 @snapend
 
-Steps:
+Same thing, using fewer commands and a utility script.
 ```bash
 $ find journal_data -type f -name \*.inc | xargs fgrep '$cachevalidurl' | node .util.js
 ```
 @[1](Find all files beneath "." matching *.inc.)
 @[2](Search each of those files for lines containing $cachevalidurl.)
-
-util.js:
 ```javascript
 #!/usr/local/bin/node
-
 const getInput = () => {
     return new Promise( (resolve, reject) => {
         let steps = {};
