@@ -27,7 +27,7 @@
 #### Slide two...
 @snapend
 
-@snap[north-east span-100]
+@snap[west span-100]
 @img[shadow](assets/img/big_command.jpg)
 @snapend
 
