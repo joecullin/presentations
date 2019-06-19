@@ -68,9 +68,7 @@ const getInput = () => {
       let lineRE = /\$cachevalidurl='(.*?)'/;
       lines.forEach(line => {
         const lineMatch = line.match(lineRE);
-        if (lineMatch) {
-          paths.push(lineMatch[1]);
-        }       
+        if (lineMatch) paths.push(lineMatch[1]);       
       });   
       resolve(paths);
     }); 
@@ -80,13 +78,8 @@ getInput().then(paths => {
   console.log("paths", paths);
 });
 ```
-
-
-@[3](Split on single quote, and take the 2nd column.)
-@[4](Insert the resulting value into a template twice.)
-@[5-6](Remove duplicates with sort+uniq.)
-@[7-10](Result)
-
+@[1](Find all files beneath "." matching *.inc.)
+@[2](Search each of those files for lines containing $cachevalidurl.)
 
 
 
