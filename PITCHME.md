@@ -22,7 +22,7 @@
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
-### Pipelines
+### Thinking in Pipes
 @snapend
 
 Big ugly command
@@ -90,6 +90,15 @@ getInput().then(paths => {
 
 @snap[west span-55]
 @ul[spaced text-white]
+- Essential grammar is small: stdin, stdout, stderr. Files & lines.
+- Will initially feel clunky and rough. As your vocabulary grows, you'll get more concise and efficient.
+- On your "main" systems e.g. your mac, you can fall back on custom utility scripts.
+- Why build your vocabulary of standard commands?
+- For when you don't have permissions (or time) to set up your usual commands.
+- So you can re-use others' work. The more commands you understand, the more you'll be able to confidently parse and adapt suggestions from stack overflow and the internet.
+- Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
+
+
 - You will be amazed
 - What you can achieve
 - *With a little imagination...*
