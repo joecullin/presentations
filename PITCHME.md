@@ -21,10 +21,8 @@
 @snapend
 
 ---?color=linear-gradient(270deg, #A4ACB3 65%, #03405f 35%)
-@title[Slide 2]
-
 @snap[north-west h4-white]
-#### Slide two...
+### Pipelines
 @snapend
 
 Big ugly command
@@ -49,7 +47,7 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-law
 @[2](filter to find all lines containing "url")
 @[3](filter to find all urls containing "/featured/")
 @[4-5](remove duplicates with sort+uniq)
-@[6](split on " char, and take the 4th column)
+@[6](split on double quote, and take the 4th column)
 @[7](insert that url into a template curl command)
 @[8-12](result)
 
