@@ -30,26 +30,15 @@ Big ugly command
 
 Steps:
 ```bash
-$ python -mjson.tool tiu_proof_20190619.json \
-| fgrep '"url"' \
-| fgrep '/featured/' \
+$ find . -type f -name \*.inc \
+| xargs fgrep '$cachevalidurl' \
+| cut "-d'" -f2 \
+| perl -p -e 's{^/(.*)}{news.thomasnet.com/$1 to www.thomasnet.com/insights/$1}' \
 | sort \
-| uniq \
-| cut '-d"' -f4 \
-| perl -p -e 's{(.*)}{curl -uTester:tester -v "$1" > /dev/null}'
-curl -uTester:tester -v "https://news.thomasnet.com/featured/going-green-how-sustainable-manufacturing-practices-help-the-environment-and-increase-your-revenue/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/how-ab-inbev-global-breweries-incorporate-sustainable-brewing-methods/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/johns-manville-to-add-new-production-line/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/rpm-international-acquires-foam-tape-maker/" > /dev/null
-curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-lawnmower-could-rival-ferrari/" > /dev/null 
+| uniq
 ```
-@[1](use python to parse (pretty-print and validate) json)
-@[2](filter to find all lines containing "url")
-@[3](filter to find all urls containing "/featured/")
-@[4-5](remove duplicates with sort+uniq)
-@[6](split on double quote, and take the 4th column)
-@[7](insert that url into a template curl command)
-@[8-12](result)
+@[1](find all files beneath "." matching *.inc)
+@[2](search each of those files for lines containing `$cachevalidurl`)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
