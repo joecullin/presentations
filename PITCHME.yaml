@@ -1,13 +1,10 @@
-# GitPitch In-60-Seconds - A Very Short Tutorial.
-#
-
 #
 # Theme Setting
 # Doc: https://gitpitch.com/docs/settings/theme
 #
 theme : template
 
-theme-background : [ "black" ]
+theme-background : [ "#00334D" ]
 theme-headline   : [ "Raleway", "white", "none" ]
 theme-byline     : [ "Raleway", "#C0C0C0", "none" ]
 theme-text       : [ "Ubuntu", "#F5FFFA", "none" ]
@@ -39,7 +36,7 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote : "Linux Tips - 2019-06-20"
 
 #
 # Published Setting
