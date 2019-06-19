@@ -45,12 +45,12 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/johns-manville-to-a
 curl -uTester:tester -v "https://news.thomasnet.com/featured/rpm-international-acquires-foam-tape-maker/" > /dev/null
 curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-lawnmower-could-rival-ferrari/" > /dev/null 
 ```
-@[1]use python to parse (pretty-print and validate) json
-@[2]filter to find all lines containing "url"
-@[3]filter to find all urls containing "/featured/"
-@[4-5]remove duplicates with sort+uniq
-@[6]from a line like `"url": "https://...",` extract just the url -- the 4th "-delimited field.
-@[7]insert that url into a template curl command
+@[1](use python to parse (pretty-print and validate) json)
+@[2](filter to find all lines containing "url")
+@[3](filter to find all urls containing "/featured/")
+@[4-5](remove duplicates with sort+uniq)
+@[6](from a line like `"url": "https://...",` extract just the url -- the 4th "-delimited field.)
+@[7](insert that url into a template curl command)
 
 
 ---?color=linear-gradient(90deg, #03405f 65%, white 35%)
