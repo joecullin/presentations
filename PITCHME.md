@@ -1,6 +1,6 @@
 # Working in Linux
 
----?color=linear-gradient(270deg, #03405f 65%, #A4ACB3 35%)
+---?color=linear-gradient(90deg, #A4ACB3 65%, #03405f 35%)
 @title[Slide 1]
 
 @snap[north-west h4-white]
@@ -20,7 +20,7 @@
 @img[shadow](assets/img/conference.png)
 @snapend
 
----?color=linear-gradient(270deg, #03405f 65%, #A4ACB3 35%)
+---?color=linear-gradient(90deg, #A4ACB3 65%, #03405f 35%)
 @title[Slide 2]
 
 @snap[north-west h4-white]
@@ -53,7 +53,7 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-law
 @[7](insert that url into a template curl command)
 
 
----?color=linear-gradient(270deg, #03405f 65%, #A4ACB3 35%)
+---?color=linear-gradient(90deg, #A4ACB3 65%, #03405f 35%)
 @title[Slide 3]
 
 @snap[north-west h4-white]
