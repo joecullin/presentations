@@ -25,9 +25,6 @@
 
 @snap[north-west h4-white]
 #### Slide two...
-@snapend
-
-@snap[west span-100]
 @img[shadow](assets/img/big_command.jpg)
 @snapend
 
