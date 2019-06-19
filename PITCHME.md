@@ -89,13 +89,13 @@ getInput().then(paths => {
 @snapend
 
 @snap[west span-100]
-@ul[spaced text-white]
+@ul[text-white]
 - Essential grammar is small: stdin, stdout, stderr. Files & lines.
-- Will initially feel clunky and rough. As your vocabulary grows, you'll get more concise and efficient.
-- On your "main" systems e.g. your mac, you can fall back on custom utility scripts.
+- Clunky and rough at first. As your vocabulary grows, you'll get more concise and efficient.
+- On your "main" systems e.g. your mac, fall back on custom utility scripts.
 - Why build your vocabulary of standard commands?
 - For when you don't have permissions (or time) to set up your usual commands.
-- So you can re-use others' work. The more commands you understand, the more you'll be able to confidently parse and adapt suggestions from stack overflow and the internet.
+- To re-use others' work. Confidently parse and adapt suggestions from stack overflow and the internet.
 - Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
 @ulend
 @snapend
