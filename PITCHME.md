@@ -88,7 +88,7 @@ getInput().then(paths => {
 @snap[west span-100]
 @ul[text-white]
 - Essential grammar is small: stdin, stdout, files, lines.
-- Start with custom scripts on your main systems e.g. your mac.
+- Start with custom scripts on your main systems (your mac).
 - As you grow your vocabulary, you'll get more concise and efficient.
 - **Why build your vocabulary** of standard commands?
 - For when you don't have permissions (or time) to set up your usual commands.
