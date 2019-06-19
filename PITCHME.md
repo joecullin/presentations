@@ -28,7 +28,7 @@
 @snapend
 
 Big ugly command
-![big command](assets/img/big_command.jpg)
+![big command](assets/img/big_command2.jpg)
 
 Steps:
 ```bash
