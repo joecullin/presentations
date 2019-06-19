@@ -27,7 +27,7 @@
 #### Slide two...
 @snapend
 
-@snap[west span-55]
+@snap[west span-100]
 ```bash
 mac dev DIRTY /code/linux-slides $ history | tail
  1633  pwd
@@ -46,10 +46,6 @@ mac dev DIRTY /code/linux-slides $
 @[2-11]that's it
 @[12]what now?
 
-@snapend
-
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
 @snapend
 
 ---?color=linear-gradient(90deg, #03405f 65%, white 35%)
