@@ -1,6 +1,6 @@
 # Working in Linux
 
----?color=linear-gradient(270deg, #A4ACB3 65%, #03405f 35%)
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
 #### Slide One
@@ -19,7 +19,7 @@
 @img[shadow](assets/img/conference.png)
 @snapend
 
----?color=linear-gradient(270deg, #A4ACB3 65%, #03405f 35%)
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
 ### Pipelines
@@ -52,7 +52,7 @@ curl -uTester:tester -v "https://news.thomasnet.com/featured/world-s-fastest-law
 @[8-12](result)
 
 
----?color=linear-gradient(270deg, #A4ACB3 65%, #03405f 35%)
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
 #### Slide three!
