@@ -1,0 +1,9 @@
+
+# vi temp files
+*.swp
+*.swo
+*~
+
+# Mac folder files
+.DS_Store
+

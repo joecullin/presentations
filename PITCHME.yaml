@@ -17,7 +17,7 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/thomas-logo-blue.svg
+logo : assets/img/thomas-logo-blue-vertical.png
 logo-postion : top-left
 
 #
