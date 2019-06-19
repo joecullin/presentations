@@ -63,7 +63,7 @@
 ---?image=assets/img/slide_background.jpg
 @transition[none]
 
-@snap[north span-100 h2-white]
+@snap[north span-100 h2-black]
 ## Required Factory Picture
 @snapend
 
