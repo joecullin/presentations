@@ -81,7 +81,9 @@ getInput().then(paths => {
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
+@snap[north-west h4-white]
 #### Building Blocks
+@snapend
 
 @snap[west span-100]
 @ul[text-white]
