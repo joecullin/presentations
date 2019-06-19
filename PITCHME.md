@@ -25,8 +25,10 @@
 
 @snap[north-west h4-white]
 #### Slide two...
-@img[shadow](assets/img/big_command.jpg)
 @snapend
+
+broken down into components:
+![big command](assets/img/big_command.jpg)
 
 broken down into components:
 ```bash
