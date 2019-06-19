@@ -1,6 +1,6 @@
 # Let's Get Started
 
----
+---?image=assets/img/slide_background.jpg
 
 ## Add Some Slide Candy
 
