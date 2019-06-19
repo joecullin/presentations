@@ -1,6 +1,6 @@
 # Let's Get Started
 
----?image=assets/img/slide_background.png
+---?image=assets/img/slide_background.jpg
 
 ## Add Some Slide Candy
 
@@ -41,7 +41,7 @@ Snap Layouts let you create custom slide designs directly within your markdown.
 @img[shadow](assets/img/conference.png)
 @snapend
 
----?image=assets/img/slide_background.png
+---?image=assets/img/slide_background.jpg
 
 @snap[north span-100 h2-white]
 ## Now It's Your Turn
