@@ -53,10 +53,9 @@ news.thomasnet.com/procurement/2014/05/22/innovative-suppliers-accept-procuremen
 
 Using fewer commands and a utility script.
 ```bash
-$ find journal_data -type f -name \*.inc | xargs fgrep '$cachevalidurl' | node .util.js
+$ find . -type f -name \*.inc | xargs cat | ./util.js
 ```
 @[1](Find all files beneath "." matching *.inc.)
-@[2](Search each of those files for lines containing $cachevalidurl.)
 ```javascript
 #!/usr/local/bin/node
 const getInput = () => {
