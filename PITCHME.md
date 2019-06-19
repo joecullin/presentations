@@ -1,22 +1,21 @@
 # Working in Linux
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+@title[Overview]
 
 @snap[north-west h4-white]
-#### Slide One
+#### Focus of This Talk
 @snapend
+
+Useful skills for troubleshooting code.
 
 @snap[west span-55]
-@ul[spaced text-white]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
+@ul[spaced text-white](false)
+- Finding things.
+- Inspecting and comparing files.
+- Modifying files.
+- Multitasking efficiently.
 @ulend
-@snapend
-
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
 @snapend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
@@ -99,7 +98,7 @@ Note:
 - Using standard building blocks also make it easier to get help.
 - There's a giant community that is eager to troubleshoot your commands.
 - Harder to get the same support for lengthy custom code.
-
+- First google result: sed, custom utility, find (recursive) with xargs.
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
