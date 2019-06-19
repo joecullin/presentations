@@ -9,14 +9,12 @@
 
 Useful skills for troubleshooting code.
 
-@snap[west span-55]
 @ul[spaced text-white](false)
 - Finding things.
 - Inspecting and comparing files.
 - Modifying files.
 - Multitasking efficiently.
 @ulend
-@snapend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
