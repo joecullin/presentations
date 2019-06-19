@@ -55,7 +55,7 @@ Using fewer commands and a utility script.
 ```bash
 $ find . -type f -name \*.inc | xargs cat | ./util.js
 ```
-@[1](Find all *.inc, files, and dump their lines.)
+@[1](Find all *.inc files, and dump their lines.)
 ```javascript
 #!/usr/local/bin/node
 const getInput = () => {
@@ -78,7 +78,7 @@ getInput().then(paths => {
 });
 ```
 @[1-7](Read stdin, split into lines.)
-@[8-12](Filter just the lines we want.)
+@[8-12](Filter the lines we want.)
 @[17-19](Further processing ...)
 
 
