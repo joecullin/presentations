@@ -41,12 +41,63 @@ news.thomasnet.com/machining/2013/02/22/bobcad-cam-unveils-grant-program-for-sma
 news.thomasnet.com/machining/2013/02/22/how-does-3-d-printing-impact-conventional-manufacturing to www.thomasnet.com/insights/machining/2013/02/22/how-does-3-d-printing-impact-conventional-manufacturing
 news.thomasnet.com/procurement/2014/05/22/innovative-suppliers-accept-procurement-challenge to www.thomasnet.com/insights/procurement/2014/05/22/innovative-suppliers-accept-procurement-challenge
 ```
-@[1](find all files beneath "." matching *.inc)
-@[2](search each of those files for lines containing $cachevalidurl)
-@[3](split on single quote, and take the 2nd column)
-@[4](insert the resulting value into a template twice)
-@[5-6](remove duplicates with sort+uniq)
-@[7-19](result)
+@[1](Find all files beneath "." matching *.inc.)
+@[2](Search each of those files for lines containing $cachevalidurl.)
+@[3](Split on single quote, and take the 2nd column.)
+@[4](Insert the resulting value into a template twice.)
+@[5-6](Remove duplicates with sort+uniq.)
+@[7-10](Result)
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+### Same thing, done partly in code
+@snapend
+
+Steps:
+```bash
+$ find journal_data -type f -name \*.inc | xargs fgrep '$cachevalidurl' | node .util.js
+```
+@[1](Find all files beneath "." matching *.inc.)
+@[2](Search each of those files for lines containing $cachevalidurl.)
+
+util.js:
+```javascript
+#!/usr/local/bin/node
+
+const getInput = () => {
+    return new Promise( (resolve, reject) => {
+        let steps = {};
+        const getStdin = require('get-stdin');
+        getStdin().then(input => {
+            let lines = input.split("\n");
+            let lineRE = /^Step ([A-Z]) must be finished before step ([A-Z]) can begin./;
+            lines.forEach( (line) => {
+                let lineMatch = line.match(lineRE);
+                let step1 = lineMatch[1], step2 = lineMatch[2];
+                if (steps[step1] === undefined){
+                    steps[step1] = [];
+                }
+                steps[step1].push(step2);
+            });
+            resolve(steps);
+        });
+    });
+};
+
+getInput()
+.then( (steps) => {
+};
+```
+
+
+@[3](Split on single quote, and take the 2nd column.)
+@[4](Insert the resulting value into a template twice.)
+@[5-6](Remove duplicates with sort+uniq.)
+@[7-10](Result)
+
+
+
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
