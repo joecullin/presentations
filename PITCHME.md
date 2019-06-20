@@ -327,10 +327,12 @@ README.md: ASCII text
 #### Navigating: multiple windows
 @snapend
 
+@snap[west span-60]
 - Use colors or themes to differentiate servers.
 - Even if you don't go overboard, distinguish prod from non-prod.
+@snapend
 
-@snap[east span-20]
+@snap[east span-40]
 @img[shadow](assets/img/terminal_colors.jpg)
 @snapend
 
