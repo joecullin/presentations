@@ -90,6 +90,7 @@ getInput().then(paths => {
 @ul[text-white]
 - Essential grammar is small: stdin, stdout, files, lines.
 - Start with custom scripts on your most-used systems.
+- Multiple steps and temp files are helpful too.
 - **Benefits of a larger vocabulary:**
 - For when you don't have permissions (or time) to set up your usual commands.
 - To re-use others' work: confidently parse and adapt suggestions from stack overflow and the internet. Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
@@ -106,10 +107,6 @@ Note:
 
 @snap[north-west h4-white]
 #### Finding Things: ls
-@snapend
-
-@snap[north-east span-20]
-@img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
 @ul[spaced text-white]
@@ -141,11 +138,10 @@ drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 @snapend
 
 @ul[spaced text-white]
-- -h *human*-readable file sizes
-- -a show *all* files, including hiden "dot" files
-- -l *long* listing: permissions, size, owner, mod time
-- -t sort by most-recently modified *time*
-- pipe to less, in case it's a large dir
+- -type - f or d (file or dir)
+- -name - filename pattern
+- -mtime - last-modified within X days
+- pipe to xargs or use -exec
 @ulend
 
 ```bash
