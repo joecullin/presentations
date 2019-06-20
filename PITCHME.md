@@ -328,8 +328,10 @@ README.md: ASCII text
 @snapend
 
 @snap[west span-60]
+@ul[spaced text-white](false)
 - Use colors or themes to differentiate servers.
 - Even if you don't go overboard, distinguish prod from non-prod.
+@ulend
 @snapend
 
 @snap[east span-40]
