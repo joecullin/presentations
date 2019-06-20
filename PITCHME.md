@@ -108,15 +108,15 @@ Note:
 #### Finding Things
 @snapend
 
-@snap[west span-70]
+@snap[north-west span-70]
 @ul[spaced text-white]
 - *With a little imagination...*
 - And **GitPitch Markdown**
 @ulend
 @snapend
 
-
-```$ ls -halt
+```bash
+$ ls -halt
 total 120
 drwxr-xr-x   7 jcullin  2044526916   442B Jun 19 21:58 .git
 -rw-r--r--   1 jcullin  2044526916    16K Jun 19 21:56 .PITCHME.md.swp
