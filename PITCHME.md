@@ -246,7 +246,7 @@ $ fgrep '//JOETEMP' index.php
 @snapend
 
 Editing commands:
-```
+```no-highlight
 ctrl-a - beginning of line    ctrl-e - end of line
 ctrl-k - cut                  ctrl-y - paste
 ctrl-n - next line            ctrl-p - previous line
@@ -254,12 +254,16 @@ ctrl-c - cancel
 ```
 
 Changing directories:
-```
+- everyday use: save some typing.
+- exploring a server: breadcrumb trail of where you've been.
+```bash
 $ cd ~/site/tnet
-$ pushd /web/logs
 $ pushd ~/logs
 $ dirs
-~/logs /web/logs ~/site/tnet
+~/logs ~/site/tnet
+$ popd
+$ pwd
+~/site/tnet
 ```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
