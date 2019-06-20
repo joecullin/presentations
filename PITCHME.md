@@ -212,7 +212,9 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 -    $outfile	= "$outdir/news/$fileName";
 +    $outfile	= "$outdir/www/$fileName";
 ```
-@[1](test)
+@[5](removed line - only exists in old)
+@[9-10](changed line)
+@[16-17](changed line)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
