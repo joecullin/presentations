@@ -222,7 +222,7 @@ Learn vi
 #### Modifying Files: working without version control
 @snapend
 
-@ul[spaced text-white](false)
+@ul[spaced text-white]
 - Back up every file you touch, or the whole dir.
 - Flag every "temp" debug change with a comment.
 - When you're done:
