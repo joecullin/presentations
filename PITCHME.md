@@ -208,20 +208,27 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
-#### Modifying Files
+#### Modifying Files: vi
 @snapend
 
-- Learn vi
- - It's installed everywhere.
- - For a week, spend 5 minutes a day doing exercises (link on last slide).
- - Then pick a regular task and use vi for it, e.g. taking daily scrum notes.
-- Working without version control
- - Back up every file before you touch it. (Or back up the whole dir.)
- - Flag every "temp" debug change with a comment.
- - When you're done:
-  - Search all files for lingering temp debug flags.
-  - Diff each changed file against its backup.
-  - Delete your backup files. (Archive them in your home dir if you're afraid to lose them.)
+Learn vi
+- It's installed everywhere.
+- For a week, spend 5 minutes a day doing exercises (link on last slide).
+- Then pick a regular task and use vi for it, e.g. taking daily scrum notes.
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Modifying Files: vi
+@snapend
+
+Working without version control
+- Back up every file before you touch it. (Or the whole dir.)
+- Flag every "temp" debug change with a comment.
+- When you're done:
+ - Search all files for lingering temp debug flags.
+ - Diff each changed file against its backup. (diff -r for whole dir.)
+ - Delete your backup files. (Archive them in your home dir if you're afraid to lose them.)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
