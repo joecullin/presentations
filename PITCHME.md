@@ -141,17 +141,18 @@ drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 - -type - f or d (file or dir)
 - -name - filename pattern
 - -mtime - last-modified within X days
-- pipe to xargs or use -exec
 @ulend
 
 ```bash
-$ find . -type f -name \*.md -mtime -1000 | xargs wc -l
+$ find . -type f -name \*.md -mtime -7 | xargs wc -l
      188 ./PITCHME.md
      329 ./README.md
       52 ./SAVE.md
       55 ./code/node_modules/get-stdin/readme.md
      624 total
 ```
+[1](Find all markdown files modified this week.)
+[2](Call wc -l on the resulting list, to get line counts.)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
