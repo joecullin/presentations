@@ -167,6 +167,7 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
  - search (same as vi)
  - show line numbers
  - efficient for giant files
+ - `space` to page down, `b` to page up, `q` to quit
 @ulend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
@@ -213,7 +214,7 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 
 Learn vi
 @ul[spaced text-white]
-- It's installed everywhere, and it's not hard to learn the basics.
+- It's installed everywhere, and it's easy to learn the basics.
 - For a week, spend 5 minutes a day doing exercises (link on last slide).
 - Then pick a small regular task to do in vi, e.g. taking daily scrum notes.
 - Bigger changes? Use `rsync` to work locally in vscode or another editor.
@@ -242,16 +243,114 @@ $ fgrep '//JOETEMP' index.php
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
+#### Navigating: shortcuts
+@snapend
+
+Changing directories:
+```bash
+$ cd ~/site/tnet
+$ pushd ~/logs
+$ dirs
+~/logs ~/site/tnet
+$ popd
+$ pwd
+~/site/tnet
+```
+@[1](Everyday use: save some typing.)
+@[1](Exploring a server: breadcrumb trail of where you've been.)
+@[2](Instead of cd, push new dir onto stack)
+@[3-4](Inspect your current stack of dirs)
+@[5](Pop a directory off the stack)
+
+Editing commands:
+```plaintext
+ctrl-a - beginning of line    ctrl-e - end of line
+ctrl-k - cut                  ctrl-y - paste
+ctrl-n - next line            ctrl-p - previous line
+ctrl-c - cancel
+```
+@[8-11](Faster editing. Normal OS controls e.g. scroll, copy, paste usually work too.)
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Navigating: job control
+@snapend
+
+```bash
+$ jobs
+[1]+  Stopped                 vi PITCHME.md
+[2]   Stopped                 vi PITCHME.yaml
+[3]-  Stopped                 vv
+```
+Switch between multiple jobs in a single shell.
+- ctrl-z to suspend a job
+- `fg` to resume the last job
+- `jobs` to list jobs
+- `fg 3` to resume job number 3
+- Alternative approaches: *screen* and *tmux*
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Navigating: history
+@snapend
+
+```bash
+$ history | tail -3
+ 2062  fg
+ 2063  git commit -am "more..." && git push
+ 2064  history | tail
+$ !g
+git commit -am "more..." && git push
+$ ls README.md 
+README.md
+$ file !$
+file README.md 
+README.md: ASCII text
+```
+@[1-4](Pipe history to `tail` - view last 3 commands.)
+@[5-6](Re-run the last command starting with "g")
+@[7-8](Run a command with one arg.)
+@[9-11](Use `!$` to re-use the previous command's last arg.)
+
+@ul[spaced text-white](false)
+- `history` - show your command history
+- `!!` - re-run previous command
+- `!$`, `!^`, `!*`, `!!:3` - parts of previous command
+- Be cautious with `!` on prod or with sudo.
+@ulend
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Navigating: multiple windows
+@snapend
+
+@snap[west span-60]
+@ul[spaced text-white](false)
+- Use colors or themes to differentiate servers.
+- Even if you don't go overboard, distinguish prod from non-prod.
+@ulend
+@snapend
+
+@snap[east span-40]
+@img[shadow](assets/img/terminal_colors.jpg)
+@snapend
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
 #### Resources
 @snapend
 
-@snap[west span-55]
 @ul[spaced text-white](false)
 - Join *#learning-linux*
 - My utility scripts: https://github.com/joecullin/joecullin-toolbox
+- Start your own utility library: `~/bin` is probably already in your path, from `~/.bash_profile`.
 - vi exercises: http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
+- Recommended commands to master: ls, less, vi, diff, history, rsync, find, cat, ssh, pbcopy/pbpaste (mac only)
 @ulend
-@snapend
 
 ---?image=assets/img/slide_background.jpg
 @title[Conclusion]
