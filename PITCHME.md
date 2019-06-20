@@ -212,9 +212,12 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 @snapend
 
 Learn vi
-- It's installed everywhere.
+@ul[spaced text-white]
+- It's installed everywhere, and it's not hard to learn the basics.
 - For a week, spend 5 minutes a day doing exercises (link on last slide).
 - Then pick a small regular task to do in vi, e.g. taking daily scrum notes.
+- Bigger changes? Use rsync to work locally in vscode or another editor.
+@ulend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
