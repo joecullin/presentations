@@ -169,17 +169,6 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
  - efficient for giant files
 @ulend
 
-```bash
-$ find . -type f -name \*.md -mtime -7 | xargs wc -l
-     188 ./PITCHME.md
-     329 ./README.md
-      52 ./SAVE.md
-      55 ./code/node_modules/get-stdin/readme.md
-     624 total
-```
-@[1](Find all markdown files modified this week.)
-@[2-6](Call wc -l on the resulting list, to get line counts.)
-
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
@@ -215,6 +204,25 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 @[6](removed line - only exists in old)
 @[10-11](changed line)
 @[17-18](changed line)
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Modifying Files
+@snapend
+
+- vi
+ - Learn vi - http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
+ - Spend 5 minutes a day fighting through it. After a few days you'll be comfortable.
+ - vim vs. vi - vim is newer and easier, but the basics are the same in both.
+- Working without version control
+ - Make backups of every file before you touch it.
+ - Note your "temp" debug changes, in a comment or in your notes (or both).
+ - If you're touching a lot of files, back up the whole dir. You can do a recursive diff on it later.
+ - When you're done:
+  - Search each changed file for your "temp" debug comments.
+  - Diff each changed file against its backup.
+  - Clean up your backup files -- move them somewhere else like your home dir, if you're afraid to lose them.
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
