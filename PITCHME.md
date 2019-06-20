@@ -211,18 +211,17 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 #### Modifying Files
 @snapend
 
-- vi
- - Learn vi - http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
- - Spend 5 minutes a day fighting through it. After a few days you'll be comfortable.
- - vim vs. vi - vim is newer and easier, but the basics are the same in both.
+- Learn vi
+ - It's installed everywhere.
+ - For a week, spend 5 minutes a day doing exercises (link on last slide).
+ - Then pick a regular task and use vi for it, e.g. taking daily scrum notes.
 - Working without version control
- - Make backups of every file before you touch it.
- - Note your "temp" debug changes, in a comment or in your notes (or both).
- - If you're touching a lot of files, back up the whole dir. You can do a recursive diff on it later.
+ - Back up every file before you touch it. (Or back up the whole dir.)
+ - Flag every "temp" debug change with a comment.
  - When you're done:
-  - Search each changed file for your "temp" debug comments.
+  - Search all files for lingering temp debug flags.
   - Diff each changed file against its backup.
-  - Clean up your backup files -- move them somewhere else like your home dir, if you're afraid to lose them.
+  - Delete your backup files. (Archive them in your home dir if you're afraid to lose them.)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
