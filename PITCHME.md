@@ -311,17 +311,10 @@ $ jobs
 
 Use `history` and `!` to re-run commands.
 ```bash
-$ history | tail
+$ history | tail -3
  2062  fg
  2063  git commit -am "more..." && git push
- 2064  fg
- 2065  git commit -am "more..." && git push
- 2066  fg
- 2067  git commit -am "more..." && git push
- 2068  fg
- 2069  git commit -am "more..." && git push
- 2070  fg
- 2071  history | tail
+ 2064  history | tail
 $ !g
 git commit -am "more..." && git push
 $ ls README.md 
