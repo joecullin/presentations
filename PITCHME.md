@@ -130,6 +130,31 @@ drwxr-xr-x   6 jcullin  2044526916   442B Jun 19 21:55 .
 drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 ```
 
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Finding Things: find 
+@snapend
+
+@snap[north-east span-20]
+@img[shadow](assets/img/find_cat2.jpg)
+@snapend
+
+@ul[spaced text-white]
+- -h *human*-readable file sizes
+- -a show *all* files, including hiden "dot" files
+- -l *long* listing: permissions, size, owner, mod time
+- -t sort by most-recently modified *time*
+- pipe to less, in case it's a large dir
+@ulend
+
+```bash
+$ find . -type f -mtime -1 -name \*.md | xargs ls -l
+-rw-r--r--  1 jcullin  2044526916   5981 Jun 19 22:13 ./PITCHME.md
+-rw-r--r--  1 jcullin  2044526916  11877 Jun 18 23:11 ./README.md
+-rw-r--r--  1 jcullin  2044526916   1146 Jun 19 00:19 ./SAVE.md
+-rw-r--r--  1 jcullin  2044526916   1051 Jun 19 08:34 ./code/node_modules/get-stdin/readme.md
+```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
