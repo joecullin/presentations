@@ -287,6 +287,7 @@ Switch between multiple jobs in a single shell.
 - `fg` to resume the last job
 - `jobs` to list jobs
 - `fg 3` to resume job number 3
+- Alternative approaches: *screen* and *tmux*
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
@@ -330,6 +331,7 @@ README.md: ASCII text
 - My utility scripts: https://github.com/joecullin/joecullin-toolbox
 - Start your own utility library: `~/bin` is probably already in your path, from `~/.bash_profile`.
 - vi exercises: http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
+- Recommended commands to master: ls, less, vi, diff, history, rsync, find, cat, ssh, pbcopy/pbpaste (mac only)
 @ulend
 
 ---?image=assets/img/slide_background.jpg
