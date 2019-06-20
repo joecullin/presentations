@@ -222,11 +222,11 @@ Learn vi
 #### Modifying Files: working without version control
 @snapend
 
-- Back up every file before you touch it. (Or the whole dir.)
+- Back up every file you touch, or the whole dir.
 - Flag every "temp" debug change with a comment.
 - When you're done:
  - Search all files for lingering temp debug flags.
- - Diff each file against backup. (diff -r for whole dir.)
+ - Diff against backup. (diff -r for whole dir.)
  - Delete your backup files. (Archive in your home dir if you're afraid to lose them.)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
