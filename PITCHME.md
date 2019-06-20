@@ -309,7 +309,6 @@ $ jobs
 #### Navigating: history
 @snapend
 
-Use `history` and `!` to re-run commands.
 ```bash
 $ history | tail -3
  2062  fg
@@ -329,14 +328,12 @@ README.md: ASCII text
 @[3-4](Inspect your current stack of dirs)
 @[5](Pop a directory off the stack)
 
-@snap[south-west span-100]
 @ul[spaced text-white](false)
 - `history` - show your shell's command history
 - `!!` - re-run previous command
 - `!$`, `!^`, `!*`, `!!:3` - re-use parts of previous command
 - Be careful with `!`, especially on prod systems or with sudo.
 @ulend
-@snapend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
