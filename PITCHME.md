@@ -276,32 +276,17 @@ ctrl-c - cancel
 #### Navigating: job control
 @snapend
 
-Use *job control* to switch between multiple jobs in a single shell.
-- ctrl-z to suspend a job
-- `fg` to resume the last job
-- `jobs` to list jobs
-- `fg 3' to resume job number 3
 ```bash
 $ jobs
 [1]+  Stopped                 vi PITCHME.md
 [2]   Stopped                 vi PITCHME.yaml
 [3]-  Stopped                 vv
 ```
-@[1-11](Pipe history to `tail` - view last 10 commands.)
-@[12-13](Re-run the last command starting with "g")
-@[2](Instead of cd, push new dir onto stack)
-@[3-4](Inspect your current stack of dirs)
-@[5](Pop a directory off the stack)
-
-@snap[south-west span-100]
-@ul[spaced text-white](false)
-- `history` - show your shell's command history
-- `!!` - re-run previous command
-- `!105` - re-run command 105 from your history
-- `!$`, `!^`, `!*`, `!!:3` - re-use parts of previous command
-- Be careful with `!`, especially on prod systems or with sudo.
-@ulend
-@snapend
+Use *job control* to switch between multiple jobs in a single shell.
+- ctrl-z to suspend a job
+- `fg` to resume the last job
+- `jobs` to list jobs
+- `fg 3' to resume job number 3
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
@@ -325,7 +310,7 @@ README.md: ASCII text
 @[1-4](Pipe history to `tail` - view last 3 commands.)
 @[5-6](Re-run the last command starting with "g")
 @[7-8](Run a command with one arg.)
-@[9-11](Use `!$ to re-use the previous command's last arg.)
+@[9-11](Use `!$` to re-use the previous command's last arg.)
 
 @ul[spaced text-white](false)
 - `history` - show your command history
