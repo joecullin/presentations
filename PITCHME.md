@@ -231,7 +231,11 @@ Learn vi
 
 ```bash
 $ diff -u -w index.php.20190618bak index.php
+```
+Wouldn't want to forget this debugging and leave it:
+```bash
 $ fgrep '//JOETEMP' index.php
+$database = 'dev'; // 'prod' //JOETEMP
 ```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
