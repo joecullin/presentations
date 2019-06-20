@@ -193,6 +193,7 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 @[1](-w - ignore whitespace-only changes)
 @[1](old file *minuses* first, new file *pluses* second)
 
+output:
 ```diff
 --- pre-dorothy-generate-sitemaps.php	2019-06-18 19:41:08.162182171 -0400
 +++ generate-sitemaps.php	2019-06-18 19:49:28.939170934 -0400
