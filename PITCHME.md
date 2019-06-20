@@ -92,8 +92,8 @@ getInput().then(paths => {
 - Start with custom scripts on your most-used systems.
 - Multiple steps and temp files are helpful too.
 - **Benefits of a larger vocabulary:**
-- For when you don't have permissions (or time) to set up your usual commands.
-- To re-use others' work: confidently parse and adapt suggestions from stack overflow and the internet. Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
+ - For when you don't have permissions (or time) to set up your usual commands.
+ - To re-use others' work: confidently parse and adapt suggestions from stack overflow and the internet. Example: https://www.google.com/search?q=linux+count+and+remove+matching+lines+in+directory
 @ulend
 @snapend
 
