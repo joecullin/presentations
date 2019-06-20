@@ -255,11 +255,11 @@ $ popd
 $ pwd
 ~/site/tnet
 ```
-@[1](everyday use: save some typing.)
-@[1](exploring a server: breadcrumb trail of where you've been.)
-@[2](instead of cd, push new dir onto stack)
-@[3-4](inspect your current stack of dirs)
-@[5](pop a directory off the stack)
+@[1](Everyday use: save some typing.)
+@[1](Exploring a server: breadcrumb trail of where you've been.)
+@[2](Instead of cd, push new dir onto stack)
+@[3-4](Inspect your current stack of dirs)
+@[5](Pop a directory off the stack)
 
 Editing commands:
 ```plaintext
