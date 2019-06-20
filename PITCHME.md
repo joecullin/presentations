@@ -324,10 +324,11 @@ README.md: ASCII text
 ```
 @[1-4](Pipe history to `tail` - view last 3 commands.)
 @[5-6](Re-run the last command starting with "g")
+@[7-8](Run a command with one arg.)
 @[9-11](Use `!$ to re-use the previous command's last arg.)
 
 @ul[spaced text-white](false)
-- `history` - show your shell's command history
+- `history` - show your command history
 - `!!` - re-run previous command
 - `!$`, `!^`, `!*`, `!!:3` - parts of previous command
 - Be cautious with `!` on prod or with sudo.
