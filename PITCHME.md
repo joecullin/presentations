@@ -322,11 +322,9 @@ $ file !$
 file README.md 
 README.md: ASCII text
 ```
-@[1-11](Pipe history to `tail` - view last 10 commands.)
-@[12-13](Re-run the last command starting with "g")
-@[2](Instead of cd, push new dir onto stack)
-@[3-4](Inspect your current stack of dirs)
-@[5](Pop a directory off the stack)
+@[1-4](Pipe history to `tail` - view last 3 commands.)
+@[5-6](Re-run the last command starting with "g")
+@[9-11](Use `!$ to re-use the previous command's last arg.)
 
 @ul[spaced text-white](false)
 - `history` - show your shell's command history
