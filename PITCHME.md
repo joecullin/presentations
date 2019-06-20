@@ -112,6 +112,14 @@ Note:
 @img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
+@ul[spaced text-white]
+- -h: *human*-readable file sizes
+- -a: show *all* files, including hiden "dot" files
+- -l: *long* listing: permissions, size, owner, mod time
+- -t: sort by most-recently modified *time*
+- pipe to less - for long listings
+@ulend
+
 ```bash
 $ ls -halt | less
 total 120
@@ -121,14 +129,6 @@ drwxr-xr-x   6 jcullin  2044526916   442B Jun 19 21:55 .
 -rw-r--r--   1 jcullin  2044526916   4.6K Jun 19 21:55 PITCHME.md
 drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 ```
-
-@ul[spaced text-white]
-- -h: *human*-readable file sizes
-- -a: show *all* files, including hiden "dot" files
-- -l: *long* listing: permissions, size, owner, mod time
-- -t: sort by most-recently modified *time*
-- pipe to less - for long listings
-@ulend
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
