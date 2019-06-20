@@ -10,10 +10,11 @@
 Useful skills for troubleshooting code.
 
 @ul[spaced text-white](false)
-- Finding things.
-- Inspecting and comparing files.
-- Modifying files.
-- Multitasking efficiently.
+- Thinking in Pipes
+- Finding things
+- Inspecting and comparing files
+- Modifying files
+- Fast navigation and task management
 @ulend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
@@ -104,19 +105,27 @@ Note:
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
-#### Slide three!
+#### Finding Things
 @snapend
 
-@snap[west span-55]
+@snap[west span-70]
 @ul[spaced text-white]
-- You will be amazed
-- What you can achieve
 - *With a little imagination...*
 - And **GitPitch Markdown**
 @ulend
 @snapend
 
-@snap[east span-45]
+
+```$ ls -halt
+total 120
+drwxr-xr-x   7 jcullin  2044526916   442B Jun 19 21:58 .git
+-rw-r--r--   1 jcullin  2044526916    16K Jun 19 21:56 .PITCHME.md.swp
+drwxr-xr-x   6 jcullin  2044526916   442B Jun 19 21:55 .
+-rw-r--r--   1 jcullin  2044526916   4.6K Jun 19 21:55 PITCHME.md
+drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
+```
+
+@snap[east span-20]
 @img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
