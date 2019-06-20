@@ -151,8 +151,8 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
       55 ./code/node_modules/get-stdin/readme.md
      624 total
 ```
-[1](Find all markdown files modified this week.)
-[2](Call wc -l on the resulting list, to get line counts.)
+@[1](Find all markdown files modified this week.)
+@[2](Call wc -l on the resulting list, to get line counts.)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
