@@ -263,11 +263,11 @@ $ popd
 $ pwd
 ~/site/tnet
 ```
-@[1](everyday use: save some typing.)
-@[1](exploring a server: breadcrumb trail of where you've been.)
-@[2](instead of cd, push new dir onto stack)
-@[3](inspect your current stack of dirs)
-@[5](pop a directory off the stack)
+@[9](everyday use: save some typing.)
+@[9](exploring a server: breadcrumb trail of where you've been.)
+@[7](instead of cd, push new dir onto stack)
+@[8](inspect your current stack of dirs)
+@[10](pop a directory off the stack)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
