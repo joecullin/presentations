@@ -325,14 +325,12 @@ README.md: ASCII text
 #### Resources
 @snapend
 
-@snap[west span-100]
 @ul[spaced text-white](false)
 - Join *#learning-linux*
 - My utility scripts: https://github.com/joecullin/joecullin-toolbox
 - Start your own utility library: `~/bin` is probably already in your path, from `~/.bash_profile`.
 - vi exercises: http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor
 @ulend
-@snapend
 
 ---?image=assets/img/slide_background.jpg
 @title[Conclusion]
