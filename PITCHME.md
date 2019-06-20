@@ -222,12 +222,14 @@ Learn vi
 #### Modifying Files: working without version control
 @snapend
 
+@ul[spaced text-white](false)
 - Back up every file you touch, or the whole dir.
 - Flag every "temp" debug change with a comment.
 - When you're done:
  - Search all files for lingering temp debug flags.
  - Diff against backup. (diff -r for whole dir.)
  - Delete your backup files. (Archive in your home dir if you're afraid to lose them.)
+@ulend
 
 ```bash
 $ diff -u -w index.php.save index.php
