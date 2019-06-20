@@ -214,7 +214,7 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 
 Learn vi
 @ul[spaced text-white]
-- It's installed everywhere, and it's not hard to learn the basics.
+- It's installed everywhere, and it's easy to learn the basics.
 - For a week, spend 5 minutes a day doing exercises (link on last slide).
 - Then pick a small regular task to do in vi, e.g. taking daily scrum notes.
 - Bigger changes? Use `rsync` to work locally in vscode or another editor.
