@@ -268,7 +268,7 @@ ctrl-k - cut                  ctrl-y - paste
 ctrl-n - next line            ctrl-p - previous line
 ctrl-c - cancel
 ```
-@[1](...)
+@[8-11](Faster editing. Normal OS controls e.g. scroll, copy, paste usually work too.)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
