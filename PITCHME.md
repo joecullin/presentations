@@ -105,10 +105,15 @@ Note:
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
-#### Finding Things
+#### Finding Things: ls
 @snapend
 
-@snap[north-west span-70]
+@snap[north-east span-20]
+@img[shadow](assets/img/find_cat2.jpg)
+@snapend
+
+
+@snap[west span-70]
 @ul[spaced text-white]
 - *With a little imagination...*
 - And **GitPitch Markdown**
@@ -124,10 +129,6 @@ drwxr-xr-x   6 jcullin  2044526916   442B Jun 19 21:55 .
 -rw-r--r--   1 jcullin  2044526916   4.6K Jun 19 21:55 PITCHME.md
 drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 ```
-
-@snap[east span-20]
-@img[shadow](assets/img/find_cat2.jpg)
-@snapend
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
