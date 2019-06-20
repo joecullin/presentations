@@ -222,6 +222,11 @@ Learn vi
 #### Modifying Files: working without version control
 @snapend
 
+```bash
+$ diff -u -w index.php.save index.php
+$ fgrep '//JOETEMP' index.php
+```
+
 @ul[spaced text-white]
 - Back up every file you touch, or the whole dir.
 - Flag every "temp" debug change with a comment.
@@ -230,11 +235,6 @@ Learn vi
  - Diff against backup. (diff -r for whole dir.)
  - Delete your backup files. (Archive in your home dir if you're afraid to lose them.)
 @ulend
-
-```bash
-$ diff -u -w index.php.save index.php
-$ fgrep '//JOETEMP' index.php
-```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
