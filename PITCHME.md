@@ -324,6 +324,19 @@ README.md: ASCII text
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
+#### Navigating: multiple windows
+@snapend
+
+- Use colors or themes to differentiate servers.
+- Even if you don't go overboard, distinguish prod from non-prod.
+
+@snap[east span-20]
+@img[shadow](assets/img/terminal_colors.jpg)
+@snapend
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
 #### Resources
 @snapend
 
