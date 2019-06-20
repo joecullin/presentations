@@ -157,6 +157,32 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
+#### Inspecting files
+@snapend
+
+@ul[spaced text-white]
+- cat, head, tail, more - older, simpler
+- less - more modern replacement for all of above
+ - keyboard navigation (same as vi)
+ - search (same as vi)
+ - line number
+ - memory efficient for giant files
+@ulend
+
+```bash
+$ find . -type f -name \*.md -mtime -7 | xargs wc -l
+     188 ./PITCHME.md
+     329 ./README.md
+      52 ./SAVE.md
+      55 ./code/node_modules/get-stdin/readme.md
+     624 total
+```
+@[1](Find all markdown files modified this week.)
+@[2-6](Call wc -l on the resulting list, to get line counts.)
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
 #### Resources
 @snapend
 
