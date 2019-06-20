@@ -254,8 +254,10 @@ ctrl-c - cancel
 ```
 
 Changing directories:
+@ul[spaced text-white]
 - everyday use: save some typing.
 - exploring a server: breadcrumb trail of where you've been.
+@ulend
 ```bash
 $ cd ~/site/tnet
 $ pushd ~/logs
