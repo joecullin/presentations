@@ -229,6 +229,11 @@ Learn vi
  - Diff against backup. (diff -r for whole dir.)
  - Delete your backup files. (Archive in your home dir if you're afraid to lose them.)
 
+```bash
+$ diff -u -w index.php.20190618bak index.php
+$ fgrep '//JOETEMP' index.php
+```
+
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
