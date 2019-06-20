@@ -1,0 +1,10 @@
+{
+  "name": "sample-code",
+  "version": "1.0.0",
+  "description": "Sample code for presentation",
+  "author": "joecullin",
+  "license": "ISC",
+  "dependencies": {
+    "get-stdin": "^6.0.0"
+  }
+}

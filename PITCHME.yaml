@@ -1,23 +1,33 @@
-# GitPitch In-60-Seconds - A Very Short Tutorial.
-#
-
 #
 # Theme Setting
 # Doc: https://gitpitch.com/docs/settings/theme
 #
 theme : template
 
+theme-background : [ "#00334D" ]
+theme-headline   : [ "Raleway", "white", "none" ]
+theme-byline     : [ "Raleway", "#C0C0C0", "none" ]
+theme-text       : [ "Ubuntu", "#F5FFFA", "none" ]
+theme-links      : [ "#E27924", "#FF851B" ]
+theme-code       : [ "Fira Code" ]
+theme-controls   : [ "#C0C0C0" ]
+theme-margins    : [ "0", "15px" ]
+
+# Display line numbers for all code blocks
+# https://gitpitch.com/docs/settings/line-numbers
+code-line-numbers : true
+
 #
 # Theme-Override Setting
 # Doc: https://gitpitch.com/docs/settings/custom-theme
 #
-theme-override: assets/css/PITCHME.css
+# theme-override: assets/css/PITCHME.css
 
 #
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/logo.png
+logo : assets/img/thomas-logo-blue-vertical.png
 logo-postion : top-left
 
 #
@@ -30,18 +40,10 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote : "Linux Tips - 2019-06-20"
 
 #
 # Published Setting
 # Doc: https://gitpitch.com/docs/settings/published
 #
 published : true
-
-#
-# Twitter Card Settings [Pro Only]
-# Doc: https://gitpitch.com/docs/settings/twitter-card
-#
-title : "GitPitch In 60 Seconds"
-description : "A short tutorial introducing the power and simplicity of GitPitch, the markdown presentation service on Git."
-thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
