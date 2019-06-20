@@ -230,12 +230,8 @@ Learn vi
  - Delete your backup files. (Archive in your home dir if you're afraid to lose them.)
 
 ```bash
-$ diff -u -w index.php.20190618bak index.php
-```
-Wouldn't want to forget this debugging and leave it:
-```bash
+$ diff -u -w index.php.save index.php
 $ fgrep '//JOETEMP' index.php
-$database = 'dev'; // 'prod' //JOETEMP
 ```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
