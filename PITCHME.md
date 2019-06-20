@@ -246,7 +246,7 @@ $ fgrep '//JOETEMP' index.php
 @snapend
 
 Editing commands:
-```joetest
+```plaintext
 ctrl-a - beginning of line    ctrl-e - end of line
 ctrl-k - cut                  ctrl-y - paste
 ctrl-n - next line            ctrl-p - previous line
