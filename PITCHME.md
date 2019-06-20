@@ -113,11 +113,11 @@ Note:
 @snapend
 
 @ul[spaced text-white]
-- -h: *human*-readable file sizes
-- -a: show *all* files, including hiden "dot" files
-- -l: *long* listing: permissions, size, owner, mod time
-- -t: sort by most-recently modified *time*
-- pipe to less - for long listings
+- -h *human*-readable file sizes
+- -a show *all* files, including hiden "dot" files
+- -l *long* listing: permissions, size, owner, mod time
+- -t sort by most-recently modified *time*
+- pipe to less, in case it's a large dir
 @ulend
 
 ```bash
