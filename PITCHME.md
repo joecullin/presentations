@@ -186,17 +186,10 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
 #### Comparing files: diff
 @snapend
 
-@ul[spaced text-white]
-- cat, head, tail, more - older, simpler
-- less - newer replacement for all of above
- - keyboard navigation (same as vi)
- - search (same as vi)
- - show line numbers
- - efficient for giant files
-@ulend
-
 ```bash
 $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
+```
+```diff
 --- pre-dorothy-generate-sitemaps.php	2019-06-18 19:41:08.162182171 -0400
 +++ generate-sitemaps.php	2019-06-18 19:49:28.939170934 -0400
 @@ -7,14 +7,43 @@
@@ -215,9 +208,6 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 -    $outfile	= "$outdir/news/$fileName";
 +    $outfile	= "$outdir/www/$fileName";
 ```
-@[1](Find all markdown files modified this week.)
-@[2-6](Call wc -l on the resulting list, to get line counts.)
-
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
