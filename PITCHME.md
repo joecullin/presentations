@@ -167,6 +167,7 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
  - search (same as vi)
  - show line numbers
  - efficient for giant files
+ - type `space` to page down, `b` to page up, `q` to quit.
 @ulend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
