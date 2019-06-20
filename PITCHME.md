@@ -193,7 +193,6 @@ $ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
 @[1](-w - ignore whitespace-only changes)
 @[1](old file *minuses* first, new file *pluses* second)
 
-output:
 ```diff
 --- pre-dorothy-generate-sitemaps.php	2019-06-18 19:41:08.162182171 -0400
 +++ generate-sitemaps.php	2019-06-18 19:49:28.939170934 -0400
@@ -213,9 +212,9 @@ output:
 -    $outfile	= "$outdir/news/$fileName";
 +    $outfile	= "$outdir/www/$fileName";
 ```
-@[5](removed line - only exists in old)
-@[9-10](changed line)
-@[16-17](changed line)
+@[6](removed line - only exists in old)
+@[10-11](changed line)
+@[17-18](changed line)
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
