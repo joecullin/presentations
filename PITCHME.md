@@ -282,11 +282,11 @@ $ jobs
 [2]   Stopped                 vi PITCHME.yaml
 [3]-  Stopped                 vv
 ```
-Use *job control* to switch between multiple jobs in a single shell.
+Switch between multiple jobs in a single shell.
 - ctrl-z to suspend a job
 - `fg` to resume the last job
 - `jobs` to list jobs
-- `fg 3' to resume job number 3
+- `fg 3` to resume job number 3
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
