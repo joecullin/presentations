@@ -145,11 +145,12 @@ drwxr-xr-x   4 jcullin  2044526916   238B Jun 19 11:57 code
 @ulend
 
 ```bash
-$ find . -type f -mtime -1 -name \*.md | xargs ls -l
--rw-r--r--  1 jcullin  2044526916   5981 Jun 19 22:13 ./PITCHME.md
--rw-r--r--  1 jcullin  2044526916  11877 Jun 18 23:11 ./README.md
--rw-r--r--  1 jcullin  2044526916   1146 Jun 19 00:19 ./SAVE.md
--rw-r--r--  1 jcullin  2044526916   1051 Jun 19 08:34 ./code/node_modules/get-stdin/readme.md
+$ find . -type f -mtime -1000 -name \*.md | xargs wc -l
+     187 ./PITCHME.md
+     329 ./README.md
+      52 ./SAVE.md
+      55 ./code/node_modules/get-stdin/readme.md
+     623 total
 ```
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
