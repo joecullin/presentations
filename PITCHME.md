@@ -258,7 +258,7 @@ $ pwd
 @[1](everyday use: save some typing.)
 @[1](exploring a server: breadcrumb trail of where you've been.)
 @[2](instead of cd, push new dir onto stack)
-@[3](inspect your current stack of dirs)
+@[3-4](inspect your current stack of dirs)
 @[5](pop a directory off the stack)
 
 Editing commands:
@@ -268,6 +268,7 @@ ctrl-k - cut                  ctrl-y - paste
 ctrl-n - next line            ctrl-p - previous line
 ctrl-c - cancel
 ```
+@[1](...)
 
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
