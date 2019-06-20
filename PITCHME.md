@@ -331,8 +331,8 @@ README.md: ASCII text
 @ul[spaced text-white](false)
 - `history` - show your shell's command history
 - `!!` - re-run previous command
-- `!$`, `!^`, `!*`, `!!:3` - re-use parts of previous command
-- Be careful with `!`, especially on prod systems or with sudo.
+- `!$`, `!^`, `!*`, `!!:3` - parts of previous command
+- Be cautious with `!` on prod or with sudo.
 @ulend
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
