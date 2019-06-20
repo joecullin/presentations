@@ -112,16 +112,18 @@ Note:
 @img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
-
-@snap[west span-70]
+@snap[south-west span-100]
 @ul[spaced text-white]
-- *With a little imagination...*
-- And **GitPitch Markdown**
+- -h: *human*-readable file sizes
+- -a: show *all* files, including hiden "dot" files
+- -l: *long* listing: permissions, size, owner, mod time
+- -t: sort by most-recently modified *time*
+- pipe to less - for long listings
 @ulend
 @snapend
 
 ```bash
-$ ls -halt
+$ ls -halt | less
 total 120
 drwxr-xr-x   7 jcullin  2044526916   442B Jun 19 21:58 .git
 -rw-r--r--   1 jcullin  2044526916    16K Jun 19 21:56 .PITCHME.md.swp
