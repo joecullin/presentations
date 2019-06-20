@@ -162,11 +162,11 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
 
 @ul[spaced text-white]
 - cat, head, tail, more - older, simpler
-- less - more modern replacement for all of above
+- less - newer replacement for all of above
  - keyboard navigation (same as vi)
  - search (same as vi)
- - line number
- - memory efficient for giant files
+ - show line numbers
+ - efficient for giant files
 @ulend
 
 ```bash
@@ -179,6 +179,45 @@ $ find . -type f -name \*.md -mtime -7 | xargs wc -l
 ```
 @[1](Find all markdown files modified this week.)
 @[2-6](Call wc -l on the resulting list, to get line counts.)
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
+#### Comparing files: diff
+@snapend
+
+@ul[spaced text-white]
+- cat, head, tail, more - older, simpler
+- less - newer replacement for all of above
+ - keyboard navigation (same as vi)
+ - search (same as vi)
+ - show line numbers
+ - efficient for giant files
+@ulend
+
+```bash
+$ diff -u -w pre-dorothy-generate-sitemaps.php generate-sitemaps.php
+--- pre-dorothy-generate-sitemaps.php	2019-06-18 19:41:08.162182171 -0400
++++ generate-sitemaps.php	2019-06-18 19:49:28.939170934 -0400
+@@ -7,14 +7,43 @@
+ $outdir	= "/www/tnetadmin/metaedit/generate-newer-sitemaps/data";
+-$pnn_root = "https://news.thomasnet.com";
+ 
+ /** featured content **/  
+ $sitemapType = "Featured Content";
+-$featuredContent = $sitecontent->get("news.thomasnet.com/_sitemap_data/featured_stories");
++$featuredContent = $sitecontent->get("www.thomasnet.com/_sitemap_data/featured_stories");
+ $totalUrls = sizeof($featuredContent);
+ if ($totalUrls == 0){ error_exit("No featured content found!"); }
+ $filenumbers = ceil($totalUrls/$max_urls);
+@@ -25,7 +54,7 @@
+     $fileName = "featured_$filenum.xml";
+-    $outfile	= "$outdir/news/$fileName";
++    $outfile	= "$outdir/www/$fileName";
+```
+@[1](Find all markdown files modified this week.)
+@[2-6](Call wc -l on the resulting list, to get line counts.)
+
 
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
