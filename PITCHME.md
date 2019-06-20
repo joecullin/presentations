@@ -242,6 +242,29 @@ $ fgrep '//JOETEMP' index.php
 ---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
 
 @snap[north-west h4-white]
+#### Navigating: shortcuts
+@snapend
+
+Editing commands:
+```
+ctrl-a - beginning of line    ctrl-e - end of line
+ctrl-k - cut                  ctrl-y - paste
+ctrl-n - next line            ctrl-p - previous line
+ctrl-c - cancel
+```
+
+Changing directories:
+```
+$ cd ~/site/tnet
+$ pushd /web/logs
+$ pushd ~/logs
+$ dirs
+~/logs /web/logs ~/site/tnet
+```
+
+---?color=linear-gradient(270deg, #A4ACB3 80%, #03405f 20%)
+
+@snap[north-west h4-white]
 #### Resources
 @snapend
 
