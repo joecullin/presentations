@@ -112,7 +112,6 @@ Note:
 @img[shadow](assets/img/find_cat2.jpg)
 @snapend
 
-@snap[south-west span-100]
 @ul[spaced text-white]
 - -h: *human*-readable file sizes
 - -a: show *all* files, including hiden "dot" files
@@ -120,7 +119,6 @@ Note:
 - -t: sort by most-recently modified *time*
 - pipe to less - for long listings
 @ulend
-@snapend
 
 ```bash
 $ ls -halt | less
