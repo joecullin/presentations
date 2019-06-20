@@ -325,7 +325,7 @@ README.md: ASCII text
 #### Resources
 @snapend
 
-@snap[west span-55]
+@snap[west span-100]
 @ul[spaced text-white](false)
 - Join *#learning-linux*
 - My utility scripts: https://github.com/joecullin/joecullin-toolbox
