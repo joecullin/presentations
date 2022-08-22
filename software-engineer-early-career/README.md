@@ -2,8 +2,8 @@
 
 Notes for August 2022 talk at https://www.codeimmersives.com/ .
 
-[job-search.md](Job search)
-[interview.md](Interview)
-[first-90-days.md](First 90 days)
-[first-couple-years.md](First couple years)
+- [Job search](job-search.md)
+- [Interview](interview.md)
+- [First 90 days](first-90-days.md)
+- [First couple years](first-couple-years.md)
 
