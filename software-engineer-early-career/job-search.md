@@ -31,6 +31,10 @@ Group open source projects are interesting. You can build more, but it's also ha
 - Really deploy your app, so you can get experience with the whole process.
 - Interviewers are less interested in seeing your actual code. They want to talk about how you identified and worked through problems.
 
+## Coding interviews
+- Resist the temptation to "cram" and learn new tech days before the interview.
+- What I'm looking for: can you ask questions and talk about how you're stuck. Even if you've never used the library I ask you to use, you should be able to talk through how it relates to something you do know. (That's what you'll do every day on the job.)
+
 
 ## "Do you have any questions for me?"
 
