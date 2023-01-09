@@ -15,3 +15,5 @@ The main slide content is in PITCHME.md, with various images, etc. in assets dir
 
 https://gist.github.com/johnloy/27dd124ad40e210e91c70dd1c24ac8c8 looks like a good list of alternatives, but I haven't explored them yet.
 
+https://www.w3.org/Talks/Tools/Slidy2 looks nice too (html rather than markdown)
+
